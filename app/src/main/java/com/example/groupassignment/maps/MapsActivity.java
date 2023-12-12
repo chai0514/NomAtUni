@@ -95,7 +95,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                             + "location=" + lastKnownLocation.getLatitude() + "," + lastKnownLocation.getLongitude()
                             + "&radius=500"
                             + "&type=restaurant";
-                            //+ "&key=AIzaSyAFv1kn-HjtXFp_gWb1-5voBe_U3bTlpK0";
 
                     JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                             response -> {
