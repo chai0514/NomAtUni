@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_caloriePlanner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calorie_planner">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="120dp"
+            android:background="@null"
+            android:backgroundTint="#FFFFFF"
+            android:text="X"
+            android:textColor="#3F51B5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="My Plan"
+            android:textAlignment="center"></TextView>
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:backgroundTint="#FFFFFF"
+            android:text="Save"
+            android:textColor="#3F51B5" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_currentWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="TextView" />
+
+                        <Button
+                            android:id="@+id/bt_currentWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="0"
+                            android:textColor="#3F51B5" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_targetWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="TextView" />
+
+                        <Button
+                            android:id="@+id/bt_targetWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="0"
+                            android:textColor="#3F51B5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="TextView" />
+
+                        <Button
+                            android:id="@+id/bt_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="0"
+                            android:textColor="#3F51B5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_targetDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="TextView" />
+
+                        <Button
+                            android:id="@+id/bt_targetDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="0"
+                            android:textColor="#3F51B5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="Age" />
+
+                        <Button
+                            android:id="@+id/bt_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="0"
+                            android:textColor="#3F51B5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:text="Gender" />
+
+                        <Button
+                            android:id="@+id/bt_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:backgroundTint="#FFFFFF"
+                            android:text="Male/Female"
+                            android:textColor="#3F51B5" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_caloriebmi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BMI Calculator"
+                        android:padding="10dp"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/eth_height"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:hint="Enter your height (M)"
+                        android:inputType="numberDecimal"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:id="@+id/eth_weight"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:hint="Enter your weight (KG)"
+                        android:inputType="numberDecimal"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/bt_calculate"
+                        android:layout_width="108dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="Calculate"
+                        android:textColor="#3F51B5" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

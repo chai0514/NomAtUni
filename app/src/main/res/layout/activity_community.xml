@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abackground"
+    android:orientation="vertical"
+    tools:context=".community_activity">
+
+    <TextView
+        android:id="@+id/Community"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:background="@color/veryDarkPink"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Community"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15sp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/short_button"
+            android:fontFamily="@font/inter_semi_bold"
+            android:text="Diets"
+            android:textAllCaps="false"
+            android:layout_margin="5sp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant"
+            android:fontFamily="@font/inter_semi_bold"
+            android:background="@drawable/short_button"
+            android:textAllCaps="false"
+            android:layout_margin="5sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Review"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="✍🏻Write a review/comment"
+            android:inputType="textMultiLine"
+            android:fontFamily="@font/inter_regular"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Post"
+            android:fontFamily="@font/inter_semi_bold"
+            android:layout_margin="10sp"
+            android:background="@drawable/short_button"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
+
+</LinearLayout>

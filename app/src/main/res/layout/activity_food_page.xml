@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fd_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food_page">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_cancelit"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lt_top"
+                android:layout_width="match_parent"
+                android:layout_height="366dp"
+                android:layout_marginTop="35dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lt_innerTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <SearchView
+                        android:id="@+id/sc_searchView"
+                        android:layout_width="325dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/search_shape"
+                        app:iconifiedByDefault="false" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_mainTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="bottom|left"
+                    android:paddingLeft="10dp"
+                    android:text="Enjoy A"
+
+                    android:textAppearance="@style/enjoy_a_hea"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_mainTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_extra_bold"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Healthier Lifestyle"
+                    android:textAppearance="@style/enjoy_a_hea"
+                    android:textColor="#2E2B2B"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/tv_recommended"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_extra_bold"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp"
+                    android:text="Recommended for you"
+                    android:textAppearance="@style/diets" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="155dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ibt_recommend1"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:shapeAppearanceOverlay="@style/rounded" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ibt_recommend2"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:shapeAppearanceOverlay="@style/rounded" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ibt_recommend3"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:shapeAppearanceOverlay="@style/rounded" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ibt_recommend4"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:shapeAppearanceOverlay="@style/rounded" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lt_middle"
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_diet"
+                    android:layout_width="439dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="#80D3D3D3"
+                    android:fontFamily="@font/inter_extra_bold"
+                    android:gravity="bottom|center|center_horizontal|left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Diets"
+                    android:textAppearance="@style/diets" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:layout_weight="1"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="163dp"
+                        android:layout_weight="1"
+                        android:background="#80D3D3D3"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ibt_paleo"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/bt_paleodiet" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ibt_keto"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:shapeAppearanceOverlay="@style/rounded"
+                            app:srcCompat="@drawable/bt_ketodiet" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lt_btm"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:layout_marginBottom="115dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_mealNearby"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="left|top"
+                    android:paddingLeft="10dp"
+                    android:text="Healthy Meals Nearby"
+                    android:textAppearance="@style/healthy_mea" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="297dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/fd_nearby"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@color/bg_color"
+                        app:shapeAppearanceOverlay="@style/rounded"
+                        app:srcCompat="@drawable/food_icon"
+                        app:strokeColor="@color/stroke_color"
+                        app:strokeWidth="2dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

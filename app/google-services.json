@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "944016620435",
+    "firebase_url": "https://nomatuni-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nomatuni",
+    "storage_bucket": "nomatuni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944016620435:android:2a21e94bad31b3bc834666",
+        "android_client_info": {
+          "package_name": "com.example.groupassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944016620435-ataglj21p9pt917uubudcd6a46kgj08q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.groupassignment",
+            "certificate_hash": "8fab2aba8eb42704df28e3905294a11e40fd97fa"
+          }
+        },
+        {
+          "client_id": "944016620435-tgnurc3eai6gvpu61t9r12ae94ri0ib4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSdd0GhOaiZMsnu-787ZC0Lb-RNoaS3z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944016620435-tgnurc3eai6gvpu61t9r12ae94ri0ib4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

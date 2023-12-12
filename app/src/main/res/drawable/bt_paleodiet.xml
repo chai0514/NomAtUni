@@ -1,0 +1,7 @@
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Rounded Background -->
+    <item android:drawable="@drawable/paleo_diet"/>
+    <!-- Image -->
+    <item android:drawable="@drawable/paleo_diet" android:gravity="center"/>
+</layer-list>

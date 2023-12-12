@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkPink"
+    android:orientation="vertical"
+    tools:context=".main_menu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@color/darkPink"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_whats_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What\'s up?"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:layout_marginStart="30sp"
+                android:layout_marginBottom="10sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_black"/>
+
+            <Button
+                android:id="@+id/bt_meal_recommend"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:gravity="start|center_vertical"
+                android:text="Meal &amp; Diet Recommendation"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:fontFamily="@font/inter_medium"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@color/darkPink"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bt_nutrition_track"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:text="Nutrition &amp; Calorie Tracker"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:fontFamily="@font/inter_medium"/>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@color/darkPink"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bt_community"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:gravity="start|center_vertical"
+                android:text="Community"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:fontFamily="@font/inter_medium"/>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@color/darkPink"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bt_profile"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:text="Personalized Profile"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:fontFamily="@font/inter_medium"/>
+
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#FEFCFC"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bt_shop_list"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:gravity="start|center_vertical"
+                android:text="Shopping List"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:fontFamily="@font/inter_medium"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abackground"
+    android:orientation="vertical"
+    tools:context=".shopping_list">
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_header_shop_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shopping List"
+        android:textSize="40sp"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textColor="@color/black"
+        android:layout_margin="10sp"/>
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/et_input_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter Items/Ingredients"
+            android:inputType="text"
+            android:fontFamily="@font/inter_regular"/>
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="3dp"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add"
+            android:textSize="20sp"
+            android:background="@drawable/short_button"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_added_shop_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shopping List"
+        android:textSize="24sp"
+        android:layout_margin="10sp"
+        android:fontFamily="@font/inter_medium"/>
+
+</LinearLayout>

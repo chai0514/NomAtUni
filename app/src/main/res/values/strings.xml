@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Nom@Uni</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="SUPABASE_KEY">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFlcXBjYXB5eGZuanRsYXN4c2RqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDE4NTcyOTgsImV4cCI6MjAxNzQzMzI5OH0.if_Fhi81-ydUShrJCWahucrhspjnbxq_hK-atAoT1ww</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="default_web_client_id">944016620435-tgnurc3eai6gvpu61t9r12ae94ri0ib4.apps.googleusercontent.com</string>
+</resources>

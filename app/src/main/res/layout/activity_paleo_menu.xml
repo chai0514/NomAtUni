@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_paleoMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diets.paleo.paleo_menu">
+
+
+  <LinearLayout
+      android:id="@+id/back_overlay"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back" />
+  </LinearLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/back_overlay">
+
+    <LinearLayout
+        android:id="@+id/lt_below"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_titleMenu1"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_weight="1"
+          android:fontFamily="@font/inter_extra_bold"
+          android:paddingLeft="15dp"
+          android:text="Paleo Menu"
+          android:textAppearance="@style/diets" />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="850dp"
+          android:layout_weight="1">
+
+
+        <ImageButton
+            android:id="@+id/ib_pfood1"
+            android:layout_width="185dp"
+            android:layout_height="255dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:foreground="@drawable/shadow_gradient"
+            app:srcCompat="@drawable/paleofood1" />
+
+        <TextView
+            android:id="@+id/tv_pfood1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-180dp"
+            android:layout_marginTop="215dp"
+            android:layout_toRightOf="@+id/ib_pfood1"
+            android:text="Poached Eggs with\nmushroom and Spinach"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/ib_pfood2"
+            android:layout_width="185dp"
+            android:layout_height="255dp"
+            android:layout_below="@id/ib_pfood1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:foreground="@drawable/shadow_gradient"
+            app:srcCompat="@drawable/paleofood3" />
+
+        <TextView
+            android:id="@+id/tv_pfood2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-180dp"
+            android:layout_marginTop="495dp"
+            android:layout_toRightOf="@+id/ib_pfood2"
+            android:text="Fried Cabbage with Sausage"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/ib_pfood3"
+            android:layout_width="185dp"
+            android:layout_height="255dp"
+            android:layout_below="@id/ib_pfood2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:foreground="@drawable/shadow_gradient"
+            app:srcCompat="@drawable/paleofood5" />
+
+        <TextView
+            android:id="@+id/tv_pfood3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-180dp"
+            android:layout_marginTop="755dp"
+            android:layout_toRightOf="@+id/ib_pfood3"
+            android:text="Lemon Pepper Chicken\nThighs"
+            android:textColor="#FFFFFF" />
+
+
+        <ImageButton
+            android:id="@+id/ib_pfood4"
+            android:layout_width="180dp"
+            android:layout_height="255dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@id/ib_pfood1"
+            android:foreground="@drawable/shadow_gradient"
+            app:srcCompat="@drawable/paleofood2" />
+
+        <TextView
+            android:id="@+id/tv_pfood4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-175dp"
+            android:layout_marginTop="225dp"
+            android:layout_toRightOf="@+id/ib_pfood5"
+            android:text="Veggie Omelet"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/ib_pfood5"
+            android:layout_width="185dp"
+            android:layout_height="255dp"
+            android:layout_below="@id/ib_pfood4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@id/ib_pfood2"
+            android:foreground="@drawable/shadow_gradient"
+            app:srcCompat="@drawable/paleofood4" />
+
+        <TextView
+            android:id="@+id/tv_pfood5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-175dp"
+            android:layout_marginTop="485dp"
+            android:layout_toRightOf="@+id/ib_pfood5"
+            android:text="Grandma's Chicken and Vegetable Stir Fry"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/ib_pfood6"
+            android:layout_width="185dp"
+            android:layout_height="255dp"
+            android:layout_below="@id/ib_pfood5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@id/ib_pfood3"
+            android:foreground="@drawable/shadow_gradient"
+            app:srcCompat="@drawable/paleofood6" />
+
+        <TextView
+            android:id="@+id/tv_pfood6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-175dp"
+            android:layout_marginTop="765dp"
+            android:layout_toRightOf="@+id/ib_pfood5"
+            android:text="Paleo Avocado Toast"
+            android:textColor="#FFFFFF" />
+
+
+      </RelativeLayout>
+
+
+    </LinearLayout>
+  </ScrollView>
+
+</RelativeLayout>
